@@ -134,7 +134,7 @@ header .name-tag {
 }
 
 .main-img {
- min-height: 275px;
+ min-height: 175px;
 }
 
 
@@ -203,7 +203,7 @@ header .name-tag {
   position:relative;
   align-items:verticle;
   margin-left: 1em;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 
 .portfolio-image-2 {
