@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+    <title>Tonia Gonzalez UI/Visual Designer</title>
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed|Ubuntu+Condensed" rel="stylesheet">  
+    <link rel="stylesheet" href="styles.css">
+  </head>
+      <body>
+
+          <div class="main-nav">
+             <img src="images/ToniaGonzalez_logo.png" class="nav-logo">
+            <ul class="nav">
+              <li><a href="#top">Home</a></li>
+              <li><a href="#portfolio">Work</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <header><a name="top"></a> 
+            <div class="main-img">
+              <img>
+            </div>
+
+            <div class="name-tag"> 
+              <h1 class="head-name"> Tonia Gonzalez</h1> 
+              <h2 class="sub-header"> UI / Visual Designer</h2>
+              <p class="header-body">Creating beautiful human-centered UI and visual designs at the intersection of art and function.</p>
+            </div>
+            </header>
+
+          <div class="divider">
+            <h2 id="portfolio" class="scroll">Recent Work</h2>
+          </div>
+
+         <main> 
+
+          <div class="section-2" class="flex">
+            <img src= "images/red_e_laptop_mobile.png" alt="laptop and mobile displaying image" class="portfolio-image">            
+            <div class="section-2-text">
+              <h2 class="section-title">Red e Cafe Redesign</h2>
+                 <p>In Portland, Oregon specialty coffee is a competitive field. The shops that are most successful also roast their own coffee and have a successful wholesale business.  The company needed to update their site after paring down to one location. The redesign aim is to generate more retail and wholesale business. This proposed redesign of the Red E Cafe mobile and web sites looks to bring more attention to their presence as a roaster as well as a cafe and gallery. Read More to learn more about the design process.</p> 
+                <button id="Button1" onclick="ReadMore();" class="button">Read More</button> 
+             </div> 
+
+            <div id="panel-1" class="panel">
+             <div class="panel-section col">    
+              <p class="panel-text">The whole site ideation process revolved around a quote that is featured prominently throughout the cafe. “Un-compromised respect for the coffee and for the people who handle it; from the farm to the cup, from us to you.” The site visually follows the steps of sourcing coffee from the farm, roasting the beans, and preparing coffee in the cafe for patrons. The use of a primary color pallet connotes life, action, appetite and energy.</p>
+              <img src= "images/Red_e_Assets.png" alt="color swatches and wireframe" class="panel-image">
+              
+            </div>
+             <div class="panel-section col-2">    
+              <p class="panel-text">The current site serves an informational purpose. It answers the question where is the cafe? This question can be easily answered in a general internet search. The updated mobile site promotes immediate engagement and answers the question; How would you like to interact with this platform? Would you like to Shop? Would you like to explore the Gallery? The empty shopping cart at the screen also signals purchases to be made.</p>
+              <img src= "images/Red_MobileBefore.png" alt="Image of current mobile site" class="portfolio-image-2"> 
+              <img src="images/Red_MobileAfter.png" alt="Image of redesign of mobile site" class="portfolio-image-2">    
+             </div>
+                
+             <div class="panel-section col-3">  
+              <p>In creating the online store I faced the challenge of visually representing seasonal merchandise. Should the offerings be text based in a table, photo based or icon based?  I created a general icon for all of the offerings with a variable text component for both the mobile and web layouts.</p>
+              <img src="images/Red_CoffeeBags.png" alt="Icons of Coffee Bags" class="portfolio-image">
+             </div>  
+             <div class="panel-section">    
+              <p class="panel-text">The web redesign broadly mirrors the current site. The Coffee Services and Online Store tab of the current site were made into a sub-menu on the redesign. The sub-meun includes the headings Coffee, Catering, Wholesale, as well as the Shopping Cart icon. The quote is placed front and center along with parallel images to set the tone for the site.</p>
+              <img src="images/Red_LaptopBefore.png" alt="Image of current site" class="portfolio-image">
+              <img src="images/Red_LaptopAfter.png" alt="Image of redesign" class="portfolio-image">  
+              <p>Although the mobile site does not feature the quote the same images are utilized. This inspires the same concept across platforms.</p> 
+              <img src="images/Red_Mobile_Layout.png" alt="Panels from mobile layout" class="panel-image-2">    
+              <br><button onclick="Close1()" class="button">Close</button> 
+            </div>  
+           </div>
+
+            <script>
+            let panel_state = false;
+            function ReadMore() {
+
+                if(panel_state === true) {
+                  document.getElementById("panel-1").style.display = "none";
+                  document.getElementById("Button1").textContent = "Read More"; 
+                } else {
+                  document.getElementById("panel-1").style.display = "block";
+                  document.getElementById("Button1").textContent = "Read Less";
+                }
+                panel_state = !panel_state;
+             }
+
+            function Close1() {
+              document.getElementById("panel-1").style.display = "none";
+              document.getElementById("Button1").textContent = "Read More";
+                
+              panel_state = !panel_state;     
+            }  
+            </script>
+
+
+       </div>  
+
+          <div class="divider-2">  </div> 
+
+          <div class="section-2" class="flex">  
+            <img src="images/OregonParks.png" alt="mobile with design layout" class="portfolio-image-2">
+            <div class="section-2-text">
+             <h2 class="section-title">Oregon State Parks App</h2>
+                 <p>The State of Oregon has a wealth of parks and trails located throughout the state. This mobile app concept would afford the user access to trail locations, accommodations and maps while on the go.  Currently, it is imperative to download or screenshot directions and camp information before leaving cell service. This app would allow access to the parks and trail databases while offline and on the road. Read more about to learn about the design process. 
+                 </p>    
+            <button id="Button2" onclick="ReadMore2();" class="button">Read More</button> 
+             </div>
+
+            <div id="panel-2" class="panel">
+                 <div class="panel-section col">    
+                  <p class="panel-text">After determining the goal of easy mobile access to the Oregon Parks database the next step was to determine what kind of app to create. Would this be a social app that shares ratings of parks and insider secrets or purely an informational tool to navigate the Oregon Parks and trails throughout the state. I decided to create the later. There are ample forums that discuss the challenges or surprises to be discovered while in nature. The goal of this app concept was clear  organized access to Oregon Parks and Trails database found on the Oregon government site.</p>
+                  <img src= "images/Oregon_2Wireframe.png" alt="mobile screen views" class="portfolio-image"> 
+                  <img src= "images/Oregon_Prototyping.png" alt="mobile screen views"  class="portfolio-image"> 
+                    
+                </div>
+
+                <div class="panel-section col-2">    
+                  <p class="panel-text">There are a great number of accommodations available at different parks throughout the state. I created icons for each type of accommodation in GravitDesigner. These accommodations icons are used in the search process for parks. They also provide general information for individual parks.</p>
+                  <img src= "images/Oregon_logos.png" alt="site logos" class="portfolio-image">
+                  <img src= "images/FindA%20Park.png" alt="Find A Park screen" class="portfolio-image-2">   
+                 </div>
+
+                <div class="panel-section col-3">    
+                  <p class="panel-text">The app database would be able to be searched for parks, trails, campsites, cabins, and maps. When using the trail search option, a search could be made by difficulty, by habitat, or by location within the state. When the map search option, there is a “You are Here” option that provides a GPS location offline in a topographical map.  This general flow of the app can be seen in this Find a Park search option. There would also be an option to save favorite locations within the app.</p>
+                  <img src= "images/Oregon_Parks_Layout.png" alt="mobile screen views" class="portfolio-image"> 
+                  <br><button onclick="Close2()" class="button">Close</button>    
+                </div> 
+                  
+            </div>      
+
+          <script>
+            let panel2_state = false;
+            function ReadMore2() {
+
+                if(panel2_state === true) {
+                  document.getElementById("panel-2").style.display = "none";
+                  document.getElementById("Button2").textContent = "Read More"; 
+                } else {
+                  document.getElementById("panel-2").style.display = "block";
+                  document.getElementById("Button2").textContent = "Read Less";
+                }
+
+                panel2_state = !panel2_state;
+             }
+
+            function Close2() {
+              document.getElementById("panel-2").style.display = "none";
+              document.getElementById("Button2").textContent = "Read More";
+                
+              panel2_state = !panel2_state;    
+            } 
+
+          </script>
+
+         </div>
+
+          <div class="divider-2"> </div> 
+
+
+        <div class="section-2" class="flex">
+              <img src="images/Vogue_Arabia.png" alt="laptop with image" class="portfolio-image">
+
+
+                <div class="section-2-text">
+                <h2 class="section-title">Vogue Arabia Redesign</h2>
+                     <p>Maintaining brand cohesiveness across languages can be a challenge for brands reliant upon recognition by their typography.  This is especially a challenge when the brand is transitioning from a character based language to a latin based language or vice-versa. This redesign of the Vogue Arabia site grapples with this challenge.  Read more to learn about the design process.</p>
+                <button id="Button3" onclick="ReadMore3();" class="button">Read More</button> 
+                </div> 
+
+            <div id="panel-3" class="panel">
+                 <div class="panel-section col">    
+                  <p class="panel-text">The Vogue-US site uses the contrast of all caps and mixed case in varying sizes to create the feel of the site. The Arabic language has no capital or lower case letters and reads right to left. The current Vogue Arabia web page shows no Arabic in the initial home screen. In my design I decided to treat the word Vogue as an image logo and make the Arabic language visible from the initial home page.</p>
+                  <img src= "images/CurrentVogue.png" alt="Current Vogue Arabia Homescreen" class="portfolio-image">     
+                  <img src= "images/VogueWireframe.png" alt="Mobile and Web Wireframe" class="portfolio-image"> 
+                </div>
+                <div class="panel-section col-2">    
+                  <p class="panel-text">In both the mobile and web layout the words “بالعربية “ -which mean “In Arabic”- are added to the Vogue logo. The header and social media bar are fixed as the user navigates throughout the mobile site. </p>
+                  <img src= "images/Vogue_Mobile_Highlight.png" alt="laptop and mobile displaying image" class="portfolio-image">     
+                 </div>
+                  <div class="panel-section col-3">    
+                  <p class="panel-text">In the redesign layout the homepage visibly features Arabic in the menu and content. In the content pages the header is fixed and the condensed Vogue logo is moved to the right of the header menu in the home position for an Arabic language site. The larger more prominent photos and articles are placed to the right of the layout as well.</p>
+                  <img src= "images/Vogue_Web1.png" alt="image of web design layout" class="portfolio-image"> 
+                  <img src="images/Vogue_Web2.png" alt="image of web design layout" class="portfolio-image">      
+                  <br><button onclick="Close3()" class="button">Close</button> 
+                  </div>
+
+          <script>
+            let panel3_state = false;
+            function ReadMore3() {
+
+                if(panel3_state === true) {
+                  document.getElementById("panel-3").style.display = "none";
+                  document.getElementById("Button3").textContent = "Read More"; 
+                } else {
+                  document.getElementById("panel-3").style.display = "block";
+                  document.getElementById("Button3").textContent = "Read Less";
+                }
+
+                panel3_state = !panel3_state;
+             }
+
+            function Close3() {
+              document.getElementById("panel-3").style.display = "none";
+              document.getElementById("Button3").textContent = "Read More";
+             
+              panel3_state = !panel3_state;
+                
+            } 
+
+            </script>
+
+        </div>    
+        
+        </div>
+
+
+          <div class="divider">
+           <h2 id="contact" class="scroll"> Contact</h2>   
+         </div>
+
+
+          <div class="section-3">
+           <div class="card-2">
+              <img src= "images/profile-pic.jpg" alt="Photo of the Designer"class="profile-pic">
+            </div>
+
+
+        <div class="card">
+            <ul class="card-text">
+                <li>
+                    <span>Email:</span> <a href="mailto:toniagonzalez.design@gmail.com">toniagonzalez.design@gmail.com</a>
+                </li>
+                <li><a>LinkedIn,</a> <a>Github,</a> and<a> Twitter</a>
+                </li>
+            </ul>    
+        </div> 
+
+            </div>  
+    
+      </main> 
+
+         <footer>
+           <ul>
+            <li><a href="http://twitter.com/encantoarboles" target="_blank" class="social twitter">Twitter</a></li>
+            <li><a href="#" class="social linkedin">LinkedIn</a></li>
+            <li><a href="#" class="social github">Github</a></li>
+          </ul>
+          <p  class="copyright">&copy; 2018, Tonia Gonzalez</p>
+        </footer>
+
+      </body>
+  
+</html>

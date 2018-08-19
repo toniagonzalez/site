@@ -1,0 +1,520 @@
+
+
+body {
+  margin:0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 100%;
+  background: url(images/blur-1867746_640.jpg);
+  background-size:cover;
+  background-attachment:fixed;
+  background-position: center;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  height: 0;
+}
+a:hover {
+  color: #d98818;
+}
+
+a:active {
+  color: #d98818;   
+}
+
+.arabic {
+  font-size: 125%;
+  font-weight: 50;
+}
+
+
+/*Navigation*/
+
+.main-nav {
+  width: 100%;
+  background:rgba(0, 0, 0, 0.7);
+  min-height: 9px;
+  padding: 2.5px;
+  position: fixed;
+  text-align:right;
+  z-index: 1;
+  display:flex;
+  justify-content:space-between;
+}
+
+.nav-logo {
+  width: 50px;
+  height: 50px;
+  background-size: 40px 40px;
+  padding-left: 20px;
+}
+
+.nav {
+  display:inline-flex;
+  font-weight: 500;
+  list-style-type:none;
+  margin: 0;
+  font-variant-caps:all-petite-caps;
+  font-size:25px;
+  padding-right: 1em;
+  
+}
+
+
+.nav li {
+  padding: 10px 15px;
+  height:0;
+}
+
+.nav a {
+  transition: all .5s;
+}
+
+.nav a:hover {
+  color: #d98818;
+}
+
+
+/*Header*/
+
+
+header {
+  text-align: center;
+  padding-top: 150px;
+  background:  url(images/journey-1130732_640.jpg);
+  background-size:cover;
+  background-attachment:fixed;
+  background-position: center;
+  max-width: 100%;
+}
+
+.tag-line {
+  color: white;
+  font-weight:100;
+}
+
+.head-name {
+  font-family: 'Ubuntu Condensed', sans-serif;;
+  color: white;
+  font-weight:0;
+  font-size: 80px;
+  font-variant-caps:all-petite-caps;
+  margin:0;
+}
+
+.sub-header {
+  color:white;
+  font-size: 45px;
+  font-variant-caps:all-petite-caps;
+  margin:0;
+}
+
+.header-body {
+  color: white;
+  text-align:center;
+  padding:20px 35px 40px;
+  position:relative;
+  font-size: 20px;
+}
+
+header .name-tag {
+  width: 100%;
+  background:linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.5));
+  padding: 0;
+  min-height: 13px;
+  display:inline-block;
+}
+
+.main-img {
+ min-height: 275px;
+}
+
+
+
+/*Body Layout*/
+  
+
+.section-title {
+  text-align:center;
+  font-variant-caps:all-petite-caps;
+  font-size: 40px;
+  margin:0;
+}
+
+
+.section-2 {
+  color: white;
+  display:inline-block;
+  position:relative;
+  width: 100%;
+  background:rgba(0, 0, 0, 0.7);
+  padding-top: 20px; 
+  margin: 0;
+}
+
+.section-2-text {
+  color: white;
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 400px;
+  text-align: left;
+  background: 0;
+  border-bottom: 0;
+  border-radius: 8px;
+  display:inline-block;
+  vertical-align:top;
+  margin:0;
+}
+
+.section-3 {
+  text-align: center;
+  background: url(images/fern-1250903_640.jpg);
+  background-size:cover;
+  background-attachment:relative;
+  background-position: center;
+  max-width: 100%;
+  
+}
+
+.section-3 {
+  color: gray;
+  background-color:white;
+  text-align:center;
+  padding top: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+  display:block;
+  z-index:.5;
+}
+
+/*Images*/
+
+.portfolio-image {
+  width: 380px;
+  height: 265px;
+  position:relative;
+  align-items:verticle;
+  margin-left: 1em;
+  padding-bottom: 20px;
+}
+
+.portfolio-image-2 {
+  align-items:center;
+  min-width: 140px;
+  max-height: 270px;
+  position:relative;
+  padding-top: 20px;  
+}
+
+
+.section-3 .profile-pic{
+  margin-top: 35px;
+  margin-bottom:0;
+  width: 150px;
+  height: 175px;
+  border-radius: 75%;
+  border: 3px gray;
+  transition: all .5s;
+  display: inline-block;
+
+}
+
+.panel-image {
+    min-width: 380px;
+    height: 305px;
+    position:relative;    
+}
+
+.panel-image-2{
+    min-width: 380px;
+    height: 176px;
+    position:relative;
+    
+}
+
+/*Card*/
+
+.card {
+  color: white;
+  margin-right: 1em;
+  max-width: 390px;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.3);
+  display:inline-block;
+  position: relative;
+}
+
+.card:hover {
+  border-color: #d98818;
+}
+ 
+.card ul {
+  display:block;
+  list-style: none;
+  font-variant-caps: all-petite-caps;
+  font-size: 25px;
+  padding: 0;
+}
+
+.card li {
+ text-align: center;   
+     
+}
+
+/*Hidden Panel*/
+
+.panel {
+ display: none;
+ color: white;
+ margin: 0;
+ padding-bottom: 20px;
+ text-align: center;
+ background: 0;
+ border-radius: 8px;
+
+}
+
+.panel-section {
+ display:inline;
+ margin-right: 1em;
+ margin-left:  1em;
+ min-width: 400px;
+ align-content: space-between;
+}
+
+.panel-text {
+  padding: 20px;
+  min-width: 350px;
+  text-align: left;
+  background: 0;
+  border-bottom: 0;
+  display:inline-block;
+  vertical-align:top;
+  padding-right: 2em;
+}
+
+.button:hover {
+ color: #d98818;
+}
+
+.button {
+ font-family: 'Ubuntu Condensed', sans-serif;   
+ font-variant-caps: all-petite-caps;
+ background: rgba(0, 0, 0, 0.4);
+ color: white;
+ border: grey;  
+ font-size: 15px;
+}
+
+
+/*Footer*/
+
+footer {
+  
+  padding-top: 20px;
+  background: url(images/journey-1130732_640.jpg);
+  background-size:cover;
+  background-attachment:fixed;
+  background-position: center;
+  max-width: 100%;
+  min-height:60px;
+}
+
+
+footer .copyright {
+  color: white;
+  padding-bottom: 40px;
+  font-size: 12px;
+  
+}
+
+
+footer ul li {
+  display: inline-block;
+  align-items:center;
+  padding: 0;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-top: 5px;
+  width: 50px;
+  height: 50px;
+  background-size: 40px 40px;
+  opacity: .9;
+  transition: all .25s;
+}
+
+a.twitter {
+  background-image: url(images/Twitter_black.png);
+  background-repeat:no-repeat;
+
+}
+
+a.linkedin {
+  background-image: url(images/linkedin.png);
+  background-repeat:no-repeat;  
+}
+
+a.github {
+  background-image: url(images/github.png);
+  background-repeat:no-repeat;
+}
+
+a.social:hover {
+  opacity: 1;
+}
+
+.clearfix {
+  clear: both;
+}
+
+
+ .flex {
+   display: flex;
+   max-width: 1200px;
+   justify-content: space-around;
+   margin: 0 auto;
+}
+
+
+/* Paralax*/
+
+  .divider {
+    background: url(images/journey-1130732_640.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+    min-height: 150px;
+    margin: 0;
+    z-index:-3;  
+  }
+  
+  .divider-2 {
+    background: url(images/journey-1130732_640.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+    min-height: 70px;
+    margin: 0;
+    z-index:-3;
+}
+  
+.scroll {
+    color: white;
+    text-align: center;
+    font-variant-caps: all-petite-caps;
+    font-size: 60px;
+    padding-top: 40px;
+    margin: 0;
+}
+
+
+/*Media Queries*/
+
+@media (min-width: 700px) {
+
+  .main-img {
+    min-height: 250px;
+  }
+
+  .portfolio-image {
+    width: 405px;
+    height: 270px;
+
+  }
+  
+  .portfolio-image-2 {
+    min-width: 140px;
+    max-height: 270px;
+ 
+  }
+
+.section-3 .profile-pic, .card {
+  display:inline-block;
+  
+  }
+
+.section-3 .profile-pic{
+  margin-top: 35px;
+  margin-bottom:0;
+  width: 225px;
+  height: 250px;
+  border-radius: 90%;
+  border: 3px gray;
+ }
+    
+
+.panel-image-2 {
+    min-width: 380px;
+    height: 305px;
+    position:relative;
+ }
+    
+}
+
+
+@media (min-width: 1200px) {
+
+  .main-img {
+    min-height: 300px;
+ }
+
+.portfolio-image {
+    min-width: 405px;
+    max-height: 40%;
+    min-height: 270px;
+    position:relative;
+    align-items:verticle;
+ }
+  
+.portfolio-image-2 {
+    align-items:center;
+    width: 13%;
+    max-height: 350px;
+    position:relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+ }
+
+.section-3 .profile-pic, .card {
+  display:inline-block;  
+ }
+
+.section-3 .profile-pic{
+  margin-top: 35px;
+  margin-bottom:0;
+  width: 225px;
+  height: 250px;
+  border-radius: 90%;
+  border: 3px gray;
+ }
+
+    
+.panel-image-2 {
+    min-width: 380px;
+    height: 305px;
+    position:relative;
+    
+ }
+
+ .col, .col-2, .col-3 {
+    display: inline-block;
+    width: 20%;
+    align-content: space-between;
+    vertical-align: top;
+    margin-right: 2em;
+ }
+    
+}
