@@ -1,7 +1,7 @@
 
 
 body {
-  margin:0;
+  margin:0 auto;
   padding: 0;
   text-align: center;
   font-family: 'Ubuntu Condensed', sans-serif;
@@ -198,7 +198,7 @@ header .name-tag {
 /*Images*/
 
 .portfolio-image {
-  width: 380px;
+  width: 355px;
   height: 265px;
   position:relative;
   align-items:verticle;
